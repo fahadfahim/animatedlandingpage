@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Animation Website</title>
+</head>
+<body>
+    
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="nav-links" id="mobileMenu">
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Services</li></a>
+                <a href=""><li>Blog</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </div>
+        <img src="./img/menu-icon.png" alt="" class="menu-icon" onclick="showMenu()">
+    </div>
+
+    <div class="hero">
+        <h1>RESPONSIVE DESIGN <br> MAKE WEBSITE BY YOURSELF</h1>
+        <div class="btn">
+                <span></span><span></span><span></span><span></span>
+            <p>Hover Me</p>
+            
+        </div>
+    </div>
+
+    <script>
+    function showMenu(){
+        var toggles = document.getElementById("mobileMenu");
+        if(toggles.style.height=="0px"){
+            toggles.style.height="200px";
+        }
+        else{
+            toggles.style.height="0px";
+        }
+    }
+    </script>
+</body>
+</html>
